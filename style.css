@@ -1,0 +1,102 @@
+ *, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ :root{
+    --primary-color-light: #f3EED9;
+    --primary-color-dark: #824936;
+    --secondary-color-dark: #222C2A;
+    --ff-primary-body: 'Roboto';
+    --fs-primary-body: 1.3125rem;
+    --ff-primary-header: 'Playfair';
+    --fs-primary-header: 3.75rem;
+    --fs-secondary-header: 2.25rem;
+ }
+
+ .container {    
+    max-width: 1128px;   
+    margin: 0 auto;     
+    padding: 100px 5vw;
+ }
+.center--text{
+    text-align: center;    
+    align-items: center;    
+    justify-content: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+    background-color: var(--primary-color-light);
+    min-height: 660px;    
+    display: flex;
+}
+.intro__headline--preface{
+    font-family: var(--ff-primary-body);
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+.intro__headline {
+    margin: 0 auto;
+    color: var(--primary-color-dark);
+    font-size: var(--fs-primary-header);
+    font-family: var(--ff-primary-header);
+    max-width: 25ch;
+}
+
+.secondary-header {
+    font-size: var(--fs-secondary-header);
+    font-family: var(--ff-primary-header);
+    margin-bottom: 1.5rem;
+}
+.onlytext{
+    display: flex;
+    flex-direction: column;
+}
+.onlytext__header {
+    color: var(--primary-color-dark);
+    margin-bottom: 2rem;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.split {
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.left-align-text {
+    font-family: var(--ff-primary-body);
+    font-size: 21px;
+}
+.text-left {
+    background-color: var(--secondary-color-dark);
+    color: var(--primary-color-light)
+}
+.split__text {
+    width: 50%;
+}
+.panel{
+    padding: 100px auto;
+}
+img {
+    width: 50%;
+}
+.text-right{
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color-light);
+}
+
+.left-align-text.secondary-header {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.split__text p{
+    width: 90%;
+}
